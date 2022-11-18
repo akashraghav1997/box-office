@@ -1,4 +1,5 @@
 {
+  "homepage": "https://akashraghav1997.github.io/box-office",
   "name": "box-office--template",
   "version": "0.1.0",
   "private": true,
@@ -23,7 +24,9 @@
     "lint": "eslint src/**/*.jsx",
     "format": "prettier --write src/**/*.jsx",
     "format:lint": "npm run format && npm run lint",
-    "clear": "rimraf build"
+    "clear": "rimraf build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -51,6 +54,7 @@
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-react": "^7.31.10",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "gh-pages": "^4.0.0",
     "prettier": "^2.7.1",
     "rimraf": "^3.0.2"
   }
